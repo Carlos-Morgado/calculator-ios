@@ -21,9 +21,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     // PRIVATE METHODS
-    private func setupView() { // Le vamos a indicar cuál será la primera vista de la app
+    private func setupView() { // We are going to indicate it what the first app screen will be
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = HomeViewController() // Pantalla raíz, la primera pantalla
+        window?.rootViewController = HomeViewController() // Main screen
         window?.makeKeyAndVisible()
     }
 
