@@ -14,14 +14,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        // Setup
+        // SETUP
         setupView()
         
         return true
     }
     
-    // Private methods
-    
+    // PRIVATE METHODS
     private func setupView() { // Le vamos a indicar cuál será la primera vista de la app
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = HomeViewController() // Pantalla raíz, la primera pantalla
