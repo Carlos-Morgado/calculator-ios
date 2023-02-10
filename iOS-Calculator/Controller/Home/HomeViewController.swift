@@ -11,10 +11,10 @@ final class HomeViewController: UIViewController {
     
     // OUTLETS
     
-        //RESULTS
+    //RESULTS
     @IBOutlet weak var resultLabel: UILabel!
     
-        //NUMBERS
+    //NUMBERS
     @IBOutlet weak var number0: UIButton!
     @IBOutlet weak var number1: UIButton!
     @IBOutlet weak var number2: UIButton!
@@ -27,7 +27,7 @@ final class HomeViewController: UIViewController {
     @IBOutlet weak var number9: UIButton!
     @IBOutlet weak var numberDecimal: UIButton!
     
-        // OPERATORS
+    // OPERATORS
     @IBOutlet weak var operatorAC: UIButton!
     @IBOutlet weak var operatorPlusMinus: UIButton!
     @IBOutlet weak var operatorPercent: UIButton!
@@ -39,8 +39,8 @@ final class HomeViewController: UIViewController {
     
     // VARIABLES
     private var total: Double = 0 // Total
-    private var temp: Double = 0 // Valor por pantalla
-    private var operating = false // Indicar si se ha seleccionado un operador
+    private var temp: Double = 0 // Value per screen
+    private var operating = false // Indicate if an operator has been selected
     
     
     // INITIALIZATION
@@ -55,27 +55,27 @@ final class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // UI
-        number0.round()
-        number1.round()
-        number2.round()
-        number3.round()
-        number4.round()
-        number5.round()
-        number6.round()
-        number7.round()
-        number8.round()
-        number9.round()
-        numberDecimal.round()
+    // UI
+    number0.round()
+    number1.round()
+    number2.round()
+    number3.round()
+    number4.round()
+    number5.round()
+    number6.round()
+    number7.round()
+    number8.round()
+    number9.round()
+    numberDecimal.round()
         
-        operatorAC.round()
-        operatorPlusMinus.round()
-        operatorPercent.round()
-        operatorResult.round()
-        operatorAddition.round()
-        operatorSubstraction.round()
-        operatorMultiplication.round()
-        operatorDivision.round()
+    operatorAC.round()
+    operatorPlusMinus.round()
+    operatorPercent.round()
+    operatorResult.round()
+    operatorAddition.round()
+    operatorSubstraction.round()
+    operatorMultiplication.round()
+    operatorDivision.round()
     }
     
     // BUTTON ACTIONS
