@@ -35,6 +35,13 @@ final class HomeViewController: UIViewController {
     @IBOutlet weak var operatorMultiplication: UIButton!
     @IBOutlet weak var operatorDivision: UIButton!
     
+    // Variables
+    
+    private var total: Double = 0 // Total
+    private var temp: Double = 0 // Valor por pantalla
+    private var operating = false // Indicar si se ha seleccionado un operador
+    
+    
     // - Initialization
     
     init() {
