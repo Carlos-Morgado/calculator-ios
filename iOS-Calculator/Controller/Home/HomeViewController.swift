@@ -11,10 +11,10 @@ final class HomeViewController: UIViewController {
     
     // OUTLETS
     
-    //RESULTS
+    // RESULTS
     @IBOutlet weak var resultLabel: UILabel!
     
-    //NUMBERS
+    // NUMBERS
     @IBOutlet weak var number0: UIButton!
     @IBOutlet weak var number1: UIButton!
     @IBOutlet weak var number2: UIButton!
@@ -38,9 +38,9 @@ final class HomeViewController: UIViewController {
     @IBOutlet weak var operatorDivision: UIButton!
     
     // VARIABLES
-    private var total: Double = 0 // Total
-    private var temp: Double = 0 // Value per screen
-    private var operating = false // Indicate if an operator has been selected
+    private var totalValue: Double = 0 // Total
+    private var temporalValue: Double = 0 // Value per screen
+    private var operatorIsSelected = false // Indicate if an operator has been selected
     
     
     // INITIALIZATION
