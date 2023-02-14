@@ -53,7 +53,7 @@ final class HomeViewController: UIViewController {
     private let totalMemory = "total"
     
     // FORMATTERS
-    // Formateo de valores auxiliares
+    // Formatting of auxiliary values
     private let auxFormatter: NumberFormatter = {
         let formatter = NumberFormatter()
         let locale = Locale.current
@@ -66,7 +66,7 @@ final class HomeViewController: UIViewController {
         return formatter
     }()
     
-    // Formateo de valores auxiliares totales (Ser capaz de contar el número de dígitos que tiene nuestro total
+    // Formatting Total Auxiliary Values
     private let auxTotalFormatter: NumberFormatter = {
         let formatter = NumberFormatter()
         formatter.groupingSeparator = ""
@@ -78,7 +78,7 @@ final class HomeViewController: UIViewController {
         return formatter
     }()
     
-    // Formateo de valores en pantalla por defecto
+    // Formatting of values ​​on screen by default
     private let printFormatter: NumberFormatter = {
         let formatter = NumberFormatter()
         let locale = Locale.current
@@ -91,7 +91,7 @@ final class HomeViewController: UIViewController {
         return formatter
     }()
     
-    // Formateo de valores por pantalla en formato científico
+    // Formatting of values ​​per screen in scientific format
     private let printScientificFormatter: NumberFormatter = {
         let formatter = NumberFormatter()
         formatter.numberStyle = .scientific
@@ -301,11 +301,11 @@ final class HomeViewController: UIViewController {
         print("TOTAL: \(totalValue)")
     }
     
-    // Muestra de forma visual la operación seleccionada
+    // Shows visually the selected operation
     private func selectVisualOperation() {
             
         if !operatorIsSelected {
-            // No estamos operando
+            // We are not operating
             operatorAddition.selectOperation(false)
             operatorSubstraction.selectOperation(false)
             operatorMultiplication.selectOperation(false)
